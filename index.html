@@ -11,16 +11,17 @@
     <link rel="stylesheet" href="assets/themes/default/default.css" type="text/css" media="all">
     <!--<link rel="stylesheet" href="assets/css/demo.css" type="text/css" media="all">-->
     <link href="css/timeline.css" rel="stylesheet" type="text/css"/>
-
+    <link href="css/fakeLoader.css" rel="stylesheet" type="text/css"/>
     <!--[if IE]>
     <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
     <![endif]-->
 </head>
 <body>
+<div class="fakeloader"></div>
 <audio id="audio" src="Beautiful_In_White.mp3" autoplay="autoplay" loop="loop"></audio>
 <div class="htmleaf-container">
     <header class="htmleaf-header">
-        <h1>停下来，慢慢走<span>二零一八年正月初五（湖北）/十六（山西）</span></h1>
+        <h1>停下来，慢慢走<span>二零一八年正月初六（湖北）/十六（山西）</span></h1>
     </header>
     <div class="htmleaf-content bgcolor-3">
         <div class='sangar-slideshow-container' id='sangar-example'>
@@ -187,8 +188,13 @@
 <script type="text/javascript" src="assets/js/sangarSlider/sangarTextbox.js"></script>
 <script type="text/javascript" src="assets/js/sangarSlider.js"></script>
 <script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src="js/fakeLoader.min.js"></script>
 <script type='text/javascript'>
     jQuery(document).ready(function ($) {
+        $(".fakeloader").fakeLoader({
+            spinner:"spinner1",
+            bgColor:"#fff"
+        });
         /**
          * identifier variable must be unique ID
          */
